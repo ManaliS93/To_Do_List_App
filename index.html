@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src = "ui-bootstrap.js"></script>
+<script src = "controller.js" ></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="ui-bootstrap-csp.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body ng-app="myApp" ng-controller="ctrl">
+
+ <div class="row" heigh="80%">
+    <div class="col-sm-2" ></div>
+    <div class="col-sm-8" >
+		<div class = "HeaderStyle" >
+			To Do List
+		</div>
+		<div class="row" height="100%">
+		<div class="col-sm-12" style="max-height:55%; overflow: auto;margin-top:1%;" >Add item in the list :<br>
+		<input class="input-text" ng-model="task" ng-keyup="searchEnter()" type="text" />
+		<img  class="plus"src="plus.png" ng-click="enterPressOnImg(task)"/>
+		
+		
+		
+		
+		<div class="list"  >
+		
+		
+			<ul>
+				<li ng-repeat="item in taskList track by $index" >
+					
+					<input type = "checkbox" ng-model="item.status"/>
+					<span title="Double click to edit contents"contenteditable="false" ng-model="item.msg" ng-keydown="enterPress(item.msg)" ng-dblclick="contentEdit(item.msg)" class=done-{{item.status}}>
+					{{item.msg}}</span>
+				</li>
+
+			</ul>
+	
+		</div>
+		
+		</div>
+		</div>
+		
+		
+		
+		
+	
+	</div>
+    <div class="col-sm-2"></div>
+  </div>
+
+
+
+
+ 
+ 
+</body>
+</html>

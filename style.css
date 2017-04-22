@@ -1,0 +1,57 @@
+div.HeaderStyle{
+
+	text-align: center;
+	text-decoration-style: solid;
+	font-size:18px;
+	padding:5px;
+	font-weight: bold;
+}
+
+.input-text{
+	
+	width:80%;
+
+
+}
+.done-true{
+	color:grey;
+	text-decoration:line-through;
+}
+span[contenteditable="true"]{
+	background-color:#e5e5e5;
+	padding:2px;
+}
+.col-sm-2{
+	
+	margin-top:10%;
+	background-color:white;
+}
+.col-sm-8{
+	color:black;
+	margin-top:10%;
+	background-color:#D4F88B;
+}
+
+.col-sm-12{
+	
+}
+.list{
+	display:block;
+	position:relative;
+	max-height:30%;
+	margin-top:1%;
+	background-color:#83EA83;
+	color:black;
+	margin-bottom:1%;
+	
+}
+.plus{
+	margin-left:1%;
+	width:5%;
+	 cursor:pointer;
+}
+.write{
+	margin-left:1%;
+	width:2%;
+	 cursor:pointer;
+}
